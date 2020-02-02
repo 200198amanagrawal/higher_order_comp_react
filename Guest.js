@@ -12,4 +12,4 @@ class Guest extends Component {
         );
     }
 }
-export default army(Guest)
+export default army(Guest,20)

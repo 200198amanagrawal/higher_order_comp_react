@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-const army=(Men)=>{
+const army=(Men,shots)=>{
 class Newmen extends Component {
     state={
         gunshots:0
     };
     handleclick=()=>{
-        this.setState({gunshots:this.state.gunshots+1});
+        this.setState({gunshots:this.state.gunshots+shots});
     }
     render() {
         return <Men 

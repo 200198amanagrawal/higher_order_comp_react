@@ -12,4 +12,4 @@ class User extends Component {
         );
     }
 }
-export default army(User)
+export default army(User,10)
