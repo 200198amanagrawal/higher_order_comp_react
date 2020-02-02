@@ -1,17 +1,12 @@
 import React, { Component } from 'react'
 import army from "./witharms"
 class Guest extends Component {
-    state={
-        gunshots:0
-    }
-    handleclick=()=>{
-        this.setState({gunshots:this.state.gunshots+1});
-    }
+    
     render() {
         return (
             <div >
-    <h3 onMouseOver={this.handleclick}> 
-    Guest {this.props.hocgungame} Gunshots: {this.state.gunshots}
+    <h3 onMouseOver={this.props.hochandleclick}> 
+    Guest {this.props.hocgungame} Gunshots: {this.props.hocgunshots}
     </h3>
             </div>
         );
