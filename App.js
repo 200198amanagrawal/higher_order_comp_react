@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
 import User from "./User"
-export const MyContext=React.createContext();
+import Guest from "./Guest"
 export default class App extends Component {
-    state={
-        name:"Aman"
-    }
     render() {
         return (
-            <>
-                <MyContext.Provider value={this.state.name}>
-                    <User/>
-                </MyContext.Provider>
-            </>
+            <div>
+               <User/>
+               <Guest/> 
+            </div>
         )
     }
 }
